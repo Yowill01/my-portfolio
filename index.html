@@ -1,47 +1,274 @@
-Skip to main content
-Yowill Sánchez
 
-About
-Skills
-Projects
-Contact
-Student software engineer
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Yowill O'Brian Sánchez Santiago, student software engineer.">
+    <title>Yowill Sánchez | Student Software Engineer</title>
 
-Yowill O’Brian Sánchez Santiago
-I’m Yowill, a student software engineer who loves music, cars, and sports. I enjoy working with people and building technology, and I’m glad you stopped by.
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-Contact me
-About
-Interests:
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
 
-Music
-Software engineering
-Cars
-Sports
-Skills
-Attention
-Teamwork
-Work fast
-Projects
-These are placeholders. Real projects will replace them.
+        header {
+            background-color: #1e293b;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
 
-Project 1
-Planned
+        header h2 {
+            color: #38bdf8;
+        }
 
-Description coming soon.
+        nav a {
+            color: #f8fafc;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
 
-Project 2
-Planned
+        nav a:hover {
+            color: #38bdf8;
+        }
 
-Description coming soon.
+        section {
+            padding: 70px 10%;
+        }
 
-Project 3
-Planned
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-Description coming soon.
+        .hero h3 {
+            color: #38bdf8;
+            font-size: 20px;
+        }
 
-Contact
-Want to talk about technology, cars, music, or sports? Send me an email.
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            margin: 10px 0;
+        }
 
-yowillsanchez@gmail.com
-© 2026 Yowill O’Brian Sánchez Santiago
+        .hero p {
+            max-width: 650px;
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0284c7;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            width: fit-content;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0369a1;
+        }
+
+        h2.section-title {
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #38bdf8;
+        }
+
+        .interests, .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            background-color: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+        }
+
+        .item h3 {
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
+
+        .item p {
+            color: #cbd5e1;
+        }
+
+        .about-text {
+            color: #cbd5e1;
+            max-width: 700px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #1e293b;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            section {
+                padding: 50px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h2>Yowill Sánchez</h2>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h3>Student Software Engineer</h3>
+
+        <h1>Yowill O’Brian Sánchez Santiago</h1>
+
+        <p>
+            I’m Yowill, a student software engineer who loves music,
+            cars, and sports. I enjoy working with people and building
+            technology, and I’m glad you stopped by.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <p class="about-text">
+            I am passionate about technology, software engineering,
+            and learning new skills. Outside of technology, I enjoy
+            music, cars, and sports.
+        </p>
+
+        <br>
+
+        <h3>My Interests</h3>
+
+        <div class="interests">
+            <div class="item"><h3>Music</h3></div>
+            <div class="item"><h3>Software Engineering</h3></div>
+            <div class="item"><h3>Cars</h3></div>
+            <div class="item"><h3>Sports</h3></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills">
+            <div class="item">
+                <h3>Attention to Detail</h3>
+                <p>Focused on quality and details.</p>
+            </div>
+
+            <div class="item">
+                <h3>Teamwork</h3>
+                <p>Enjoy collaborating with others.</p>
+            </div>
+
+            <div class="item">
+                <h3>Fast Learner</h3>
+                <p>Adapt quickly and learn new technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <p class="about-text">
+            These are some of my planned projects. More will be added soon.
+        </p>
+
+        <br>
+
+        <div class="projects">
+            <div class="item">
+                <h3>Project 1</h3>
+                <p>Planned</p>
+                <p>Description coming soon.</p>
+            </div>
+
+            <div class="item">
+                <h3>Project 2</h3>
+                <p>Planned</p>
+                <p>Description coming soon.</p>
+            </div>
+
+            <div class="item">
+                <h3>Project 3</h3>
+                <p>Planned</p>
+                <p>Description coming soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <p class="about-text">
+            Want to talk about technology, cars, music, or sports?
+            Send me an email.
+        </p>
+
+        <br>
+
+        <a href="mailto:YOUR_EMAIL@example.com" class="btn">
+            Send Me an Email
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Yowill Sánchez. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
